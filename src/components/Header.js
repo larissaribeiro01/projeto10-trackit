@@ -2,13 +2,12 @@ import styled from "styled-components";
 
 export default function Header () {
     const userData = localStorage.getItem('userData');
-    const unserializedData=JSON.parse(userData);
-    const src= unserializedData.image
+    
 
     return (
         <Top>
             <Logo>TrackIt</Logo>
-            <Img src={src} />
+            
         </Top>
     )
 }
