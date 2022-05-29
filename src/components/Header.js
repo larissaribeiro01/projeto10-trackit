@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export default function Header () {
     const userData = localStorage.getItem('userData');
-    
+    const unserializedData=JSON.parse(userData);
+    const src= unserializedData.image
 
     return (
         <Top>
             <Logo>TrackIt</Logo>
-            
+            <Img src={src} />
         </Top>
     )
 }
@@ -16,7 +17,7 @@ const Top = styled.div `
     position: fixed;
     top:0;
     left:0;
-    width: 100vw;
+    width: 100%;
     height: 70px;
     display: flex;
     flex-direction: row;

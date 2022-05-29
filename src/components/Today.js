@@ -29,7 +29,6 @@ function Today(props){
 
     
     
-    
     return(
         <>
         <Content>

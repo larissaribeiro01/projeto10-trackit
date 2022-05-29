@@ -5,7 +5,6 @@ import styled from 'styled-components';
 
 import "../assets/reset.css";
 import Login from "./Login";
-import SignUp from "./SignUp";
 import Today from "./Today";
 import Habits from "./Habits";
 import History from "./History";
@@ -15,6 +14,7 @@ import HabitCont from "./HabitCont";
 import Percentage from "./Percentage";
 import TodayHabitsCont from "./TodayHabitsCont";
 import HabitsStatusCont from "./HabitsStatusCont";
+import Register from "./Register";
 
 export default function App () {
     const [Load, setLoad] = useState(false);
@@ -63,7 +63,7 @@ export default function App () {
                                         <HabitsStatusCont.Provider value={{HabitsStatus, setHabitsStatus}}>
                                             <Routes>
                                                 <Route path="/" element={<Login />} />
-                                                <Route path="/cadastro" element={<SignUp />} />
+                                                <Route path="/cadastro" element={<Register/>} />
                                                 <Route path="/hoje" element={<Today />} />
                                                 <Route path="/habitos" element={<Habits fetchTodaysHabits={fetchTodaysHabits}/>} />
                                                 <Route path="/historico" element={<History />} />

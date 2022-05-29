@@ -21,7 +21,7 @@ export default function Habits (props) {
 
     const userDataLocalStorage = localStorage.getItem("userData")
     const unserializedData = JSON.parse(userDataLocalStorage)
-    const tokenStorage = unserializedData.token;
+    const tokenStorage = unserializedData?.token;
 
     useEffect(() => fetchHabits(), []);
 
@@ -184,7 +184,7 @@ const Main = styled.div`
     overflow-y: scroll;
 `
 const MyHabitsBar = styled.div`
-    margin-top: 71px;
+    margin-top: 110px;
     margin-bottom: 20px;
     display: flex;
     justify-content:space-between;

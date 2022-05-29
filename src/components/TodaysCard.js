@@ -24,8 +24,8 @@ function TodaysCard(props){
                 "Authorization": `Bearer ${tokenStorage}`
             }
         }
-        const URL = 'https://mock-api.bootcamp.respondeai.com.br/api/v2/trackit/habits/'
-        const promise = axios.post(`${URL}${id}/${done?"un":""}check`,{}, config)
+    
+        const promise = axios.post(`https://mock-api.bootcamp.respondeai.com.br/api/v2/trackit/habits/${id}/${done?"un":""}check`,{}, config)
         promise.then(() =>fetchTodaysHabits())
         promise.catch(e => console.log(e))
         
