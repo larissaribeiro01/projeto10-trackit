@@ -6,7 +6,7 @@ import 'dayjs/locale/pt-br'
 import updateLocale from 'dayjs/plugin/updateLocale'
 
 import styled from "styled-components";
-import { useContext, useEffect } from "react";
+import { useContext} from "react";
 
 import Percentage from "./Percentage";
 import TodayHabitsCont from "./TodayHabitsCont";

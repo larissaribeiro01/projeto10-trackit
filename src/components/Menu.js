@@ -35,7 +35,7 @@ export default function Menu () {
 
 
 const Container = styled.div`
-    position: absolute;
+    position: fixed;
     bottom:0;
     left:0;
     width: 100vw;
@@ -46,6 +46,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    box-sizing: border-box;
     p{
         font-family: 'Lexend Deca';
         font-style: normal;
